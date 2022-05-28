@@ -13,14 +13,14 @@ while(true){
 /**
  * Custom blocks
  */
-//% weight=100 color=#0fbc11 icon=""
+//% weight=100 color=#0fbc11 icon="\uf031"
 namespace timer {
     /**
      * starts the timer
      */
     //% block
     export function start(n: number): void {
-        running = true;
+        running = true
         time = n
     }
     /**
@@ -35,6 +35,13 @@ namespace timer {
      */
     //% block
     export function timeleft(): number {
-        return(time)
+        return(time);
+    }
+    /**
+     * returns true if the timer is running
+     */
+    //% block
+    export function counting(): boolean {
+        return (running);
     }
 }
