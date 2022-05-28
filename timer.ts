@@ -3,10 +3,11 @@ let time = 0
 
 while(true){
     if (running) {
-        if (time == 0) {
-            time = time - 1
-            basic.pause(1000);
+        if (time == 0) { 
+            timer.stop()
         }
+    time = time - 1
+    basic.pause(1000);
     }
 }
 
